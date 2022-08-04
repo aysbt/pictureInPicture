@@ -18,10 +18,26 @@ button {
     width: 150px;
     height: 50px;
     cursor: pointer;
+    outline: none;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,0.9640231092436975) 100%);
+    border-radius: 0.5em;
+    color: floralwhite;
+    font-size: 26px;
+    font-family: Uchen, sans-serif;
+    text-shadow: 0 2px 3px ;
+    background-color: darkslateblue;
+    box-shadow: 6px 6px 12px #a38ade,
+             -6px -6px 12px #cb7bd1;
+}
+
+button:hover {
+	box-shadow: 20px 5px 4px #a38ade, -20px -5px 4px #cb7bd1;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 10px 3px 5px #a38ade, -10px -3px 5px #cb7bd1;
 }
